@@ -1,4 +1,5 @@
 package com.edwardeveloper.crud.controller;
+import com.edwardeveloper.crud.model.Cliente;
 import com.edwardeveloper.crud.repository.ClienteEntity;
 import com.edwardeveloper.crud.service.ClienteService;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,7 +17,7 @@ public class ClienteController {
     }
 
     @GetMapping("/clientes")
-    public List<ClienteEntity> getClientesController(){
+    public List<Cliente> getClientesController(){
         return clienteService.getClienteService();
     }
 
